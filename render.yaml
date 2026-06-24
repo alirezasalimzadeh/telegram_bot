@@ -1,5 +1,5 @@
 services:
-  - type: worker
+  - type: web
     name: telegram-bot
     runtime: python
     buildCommand: pip install -r requirements.txt
@@ -7,3 +7,5 @@ services:
     envVars:
       - key: 5513479285:AAG4SGngQcnQycQYBkj59noDkgSSYDOLOyA
         sync: false
+      - key: PORT
+        value: 8080
